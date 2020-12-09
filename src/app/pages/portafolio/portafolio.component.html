@@ -25,7 +25,7 @@
   </div>
 <div *ngIf="!productoService.cargando">
   <div class="animate__animated animate__fadeIn ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-    <a *ngFor="let product of productoService.productos" routerLink="/item" class="rk-item ae-masonry__item">
+    <a *ngFor="let product of productoService.productos" [routerLink]="['/item',product.cod]" class="rk-item ae-masonry__item">
       <img src="assets/productos/{{product.url}}.jpg" alt="{{product.url}}">
       <div class="item-meta">
         <h2>{{product.titulo}}</h2>

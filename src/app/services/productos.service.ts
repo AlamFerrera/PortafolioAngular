@@ -21,5 +21,9 @@ export class ProductosService {
     });
   }
 
+  getProducto(id:string){
+   return this.http.get(`https://angular-html-b400d-default-rtdb.firebaseio.com/productos/${id}.json`);
+  }
+
 
 }

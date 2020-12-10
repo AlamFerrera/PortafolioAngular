@@ -1,5 +1,5 @@
 <section class="">
-  <header class="rk-portfolio-cover item-inside-1">
+  <header [ngStyle]="{'background-image': 'url(assets/productos/' + id +'/main.jpg)' }" class="rk-portfolio-cover item-inside-1">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title ">{{producto.producto}}</h1>
       <p class="ae-theta rk-portfolio-category ">{{producto.categoria}}</p>
@@ -11,9 +11,14 @@
         <h2 class="rk-portfolio-inner-title ">{{producto.subtitulo1}}</h2>
       </div>
       <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
-        <p class="rk-portfolio-inner-client "><span class="ae-lambda">Client: </span><span class="ae-u-bolder">Agency
-            Design Studio</span></p>
-        <p class="au-underline rk-portfolio-inner-website "><a href="#0" class="ae-kappa">www.agencydesign.com</a></p>
+        <p class="rk-portfolio-inner-client "><span class="ae-lambda">Client: </span>
+          <span class="ae-u-bolder">Agency
+            Design Studio
+          </span>
+        </p>
+        <p class="au-underline rk-portfolio-inner-website ">
+          <a href="#0" class="ae-kappa">www.agencydesign.com</a>
+        </p>
         <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">12 August, 2015</p>
       </div>
     </div>
@@ -30,7 +35,8 @@
     </div>
     <div class="ae-grid ae-grid--collapse">
       <div class="ae-grid__item item-lg-8">
-        <img src="assets/productos/{{id}}/pic-2.jpg" alt="Urku Portfolio"></div>
+        <img src="assets/productos/{{id}}/pic-2.jpg" alt="Urku Portfolio">
+      </div>
       <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
         <p>{{producto.desc2}} </p>
         <p class="ae-u-bolder">{{producto.subtitulo2}}</p>
